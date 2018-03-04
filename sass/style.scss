@@ -29,8 +29,31 @@ body{
 	}
 }
 
+//style top banner
+.topbanner{
+	position: fixed;
+	top: 0;
+	z-index: 100000;
+	height: 27px;
+	background-color: $mainbackground;
+	a{
+		padding-right: 7px;
+	}
+	select{
+		margin: 5px;
+		@include navigationfont;
+		font-size: 8pt;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.basket{
+		margin-right: 10px;
+	}
+}
+
 //style the navbar
 nav{
+	margin-top: 27px;
 	@include navigationfont;
 	@include carbonfibre;
 	text-transform: uppercase;
@@ -65,4 +88,9 @@ nav{
 //remove excess padding on dropdown menu
 .dropdown-menu{
 	padding: 0;
+}
+
+//correct header height positioning
+header{
+	margin-top: 67px;
 }
