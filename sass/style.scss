@@ -27,12 +27,6 @@ $mainfontcolour: #fff;
 
 body{
 	background-color: $mainbackground;
-	h1{
-		color: yellow;
-	}
-	h2{
-		color: green;
-	}
 }
 
 //style top banner
@@ -124,9 +118,49 @@ header{
 	}
 }
 
-.coverage{
+.surface-headline{
 	@include siteheadingfont;
+	padding: 20px;
+	color: $mainfontcolour;
 	font-weight: bold;
+	font-size: 24pt;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.choose-surface{
+  overflow: hidden;
+  position: relative;
+  border-radius: 1%;
+  transition: 0.3s ease-in-out;
+  img{
+    filter: grayscale(100%);
+    transition: 0.3s ease-in-out;
+  }
+  h4{
+  	@include siteheadingfont;
+  	font-weight: bold;
+  	padding: 10px;
+  }
+  .choose-surface-inner{
+    position: absolute;
+    top: 80%;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.5);
+    width:100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+}
+
+.choose-surface:hover{
+  box-shadow: 0px 0px 20px #fff;
+  img{
+    filter: none;
+    transform: scale(1.10);
+  }
+  .choose-surface-inner{
+    top: 50%;
+  }
 }
