@@ -1,6 +1,8 @@
 body {
   background-color: #000000;
   font-family: 'Roboto Condensed', sans-serif; }
+  body h4 {
+    font-size: 14pt; }
 
 .topbanner {
   position: fixed;
@@ -89,7 +91,7 @@ header {
   .choose-surface h4 {
     font-family: 'Exo 2', sans-serif;
     font-weight: bold;
-    padding: 10px; }
+    padding: 20px; }
   .choose-surface p {
     text-transform: uppercase; }
   .choose-surface button {
@@ -98,8 +100,8 @@ header {
     text-transform: uppercase;
     font-size: 10pt;
     font-weight: bold;
-    color: #fff;
-    background-color: #111;
+    color: #111;
+    background-color: #fff;
     border: none;
     transition: 0.2s ease-in-out; }
   .choose-surface .choose-surface-inner {
@@ -118,10 +120,9 @@ header {
     filter: none;
     transform: scale(1.1); }
   .choose-surface:hover .choose-surface-inner {
-    top: 50%; }
+    top: 40%; }
   .choose-surface:hover button:hover {
-    background-color: #fff;
-    color: #000; }
+    background-color: #aaa; }
 
 .kitout-tile {
   overflow: hidden;
@@ -160,5 +161,24 @@ header {
   top: 0%; }
   .kitout-tile:hover .kitout-tile-overlay button:hover {
     background-color: #aaa; }
+
+.sale {
+  font-family: 'Exo 2', sans-serif;
+  min-height: 332px;
+  width: 100%;
+  background: linear-gradient(#B22222, #8B0000);
+  display: table;
+  text-align: center;
+  transition: 0.3s ease-in-out; }
+  .sale .sale-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff; }
+    .sale .sale-container h1, .sale .sale-container h3 {
+      padding: 10px; }
+
+.sale:hover {
+  opacity: 0.7; }
 
 /*# sourceMappingURL=style.css.map */
