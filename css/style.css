@@ -181,4 +181,40 @@ header {
 .sale:hover {
   opacity: 0.7; }
 
+.kitted-out-mini {
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s ease-in-out; }
+  .kitted-out-mini h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 20px; }
+  .kitted-out-mini button {
+    margin: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #111;
+    background-color: #fff;
+    border: none;
+    transition: 0.2s ease-in-out; }
+  .kitted-out-mini .kitted-out-mini-inner {
+    position: absolute;
+    padding: 0px 10px;
+    top: 75%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    text-align: center; }
+
+.kitted-out-mini:hover .kitted-out-mini-inner {
+  padding-top: 10px;
+  top: 0%; }
+.kitted-out-mini:hover button:hover {
+  background-color: #aaa; }
+
 /*# sourceMappingURL=style.css.map */
