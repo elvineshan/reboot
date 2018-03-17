@@ -41,6 +41,20 @@ $mainfontcolour: #fff;
 	}
 }
 
+//fix navbar on 1024px size screen width (e.g. for iPad Pro)
+@mixin fixnavbar{
+	@media screen and (width: 1024px) {
+		padding-right: 0px;
+	}
+}
+
+//fix alignment of search form and search icon to appear on same line for smaller screens
+@mixin fixsearchform{
+	@media screen and (max-width: 1024px) {
+		width: 80%;
+	}
+}
+
 //carbon fibre effect
 @mixin carbonfibre {
 	background-color: rgb(32, 32, 32);
@@ -100,6 +114,17 @@ nav{
 			border: none;
 		}
 	}
+}
+
+//fix navbar width on 1024px screen (e.g. for iPad Pro)
+.form-inline .form-control{
+	@include fixnavbar;
+}
+
+
+//fix search form alignment on smaller screens
+.form-inline .form-control{
+	@include fixsearchform;
 }
 
 //style navbar font colour
