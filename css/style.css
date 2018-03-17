@@ -223,9 +223,10 @@ footer {
   background-size: 10px 10px, 10px 10px, 10px 5px;
   background-position: 0px 0px, 5px 5px, 0px 0px;
   font-family: 'Kanit', sans-serif;
-  height: 50px;
+  min-height: 50px;
   text-transform: uppercase;
-  font-size: 9pt; }
+  font-size: 9pt;
+  border-top: 1px solid #ddd; }
   footer .nav {
     padding-top: 10px; }
     footer .nav img {
@@ -233,5 +234,21 @@ footer {
       padding-right: 8px; }
   footer a {
     color: #fff; }
+  @media screen and (max-width: 768px) {
+    footer .footer-links {
+      justify-content: center; } }
+  @media screen and (min-width: 769px) {
+    footer .footer-links {
+      justify-content: flex-start; } }
+  footer .socialmedia {
+    padding-bottom: 15px; }
+    footer .socialmedia a:hover {
+      opacity: 0.6; }
+    @media screen and (max-width: 768px) {
+      footer .socialmedia {
+        justify-content: center; } }
+    @media screen and (min-width: 769px) {
+      footer .socialmedia {
+        justify-content: flex-end; } }
 
 /*# sourceMappingURL=style.css.map */
