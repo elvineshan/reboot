@@ -55,6 +55,23 @@ $mainfontcolour: #fff;
 	}
 }
 
+//align disclaimer text to center on smaller screens
+@mixin aligndisclaimercenter{
+	@media screen and (max-width: 767px) {
+		text-align: center;
+		margin-bottom: 0px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
+//align card icons to center on smaller screens
+@mixin aligncardscenter{
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
+}
+
 //carbon fibre effect
 @mixin carbonfibre {
 	background-color: rgb(32, 32, 32);
@@ -353,6 +370,31 @@ header{
 	}
 	button:hover{
 		background-color: #aaa;
+	}
+}
+
+.disclaimer{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	@include aligndisclaimercenter;
+	p{
+		color: $mainfontcolour;
+		font-size: 9pt;
+		margin: 0;
+	}
+}
+
+.cards{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	@include aligncardscenter;
+	li{
+		display: inline;
+		padding: 0px 5px;
 	}
 }
 

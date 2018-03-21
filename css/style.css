@@ -225,6 +225,34 @@ header {
 .kitted-out-mini:hover button:hover {
   background-color: #aaa; }
 
+.disclaimer {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  @media screen and (max-width: 767px) {
+    .disclaimer {
+      text-align: center;
+      margin-bottom: 0px;
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+  .disclaimer p {
+    color: #fff;
+    font-size: 9pt;
+    margin: 0; }
+
+.cards {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end; }
+  @media screen and (max-width: 767px) {
+    .cards {
+      justify-content: center; } }
+  .cards li {
+    display: inline;
+    padding: 0px 5px; }
+
 footer {
   background-color: #202020;
   background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, #080808, #202020);
